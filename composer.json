@@ -1,0 +1,41 @@
+{
+    "name": "wovosoft/laravel-expense-module",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@email.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/wovosoft/laravel-expense-module",
+    "keywords": ["Laravel", "LaravelExpenseModule"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wovosoft\\LaravelExpenseModule\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wovosoft\\LaravelExpenseModule\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wovosoft\\LaravelExpenseModule\\LaravelExpenseModuleServiceProvider"
+            ],
+            "aliases": {
+                "LaravelExpenseModule": "Wovosoft\\LaravelExpenseModule\\Facades\\LaravelExpenseModule"
+            }
+        }
+    }
+}
