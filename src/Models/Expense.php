@@ -6,11 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Laravel\Scout\Searchable;
 use Wovosoft\LaravelExpenseModule\Traits\HasTablePrefix;
 
 class Expense extends Model
 {
-    use HasFactory, HasTablePrefix;
+    use HasFactory, HasTablePrefix, Searchable;
 
     public static function rules(): array
     {
